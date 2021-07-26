@@ -28,7 +28,7 @@ ALL_MODULES                 := no
 
 CHEMICAL_REACTIONS          := no
 CONTACT                     := no
-EXTERNAL_PETSC_SOLVER       := no
+EXTERNAL_PETSC_SOLVER       := yes
 FLUID_PROPERTIES            := no
 FSI                         := no
 FUNCTIONAL_EXPANSION_TOOLS  := no
@@ -37,13 +37,13 @@ HEAT_CONDUCTION             := no
 LEVEL_SET                   := no
 MISC                        := no
 NAVIER_STOKES               := no
-PHASE_FIELD                 := no
+PHASE_FIELD                 := yes
 POROUS_FLOW                 := no
 RAY_TRACING                 := no
 RDG                         := no
 RICHARDS                    := no
-STOCHASTIC_TOOLS            := no
-TENSOR_MECHANICS            := no
+STOCHASTIC_TOOLS            := yes
+TENSOR_MECHANICS            := yes
 XFEM                        := no
 
 include $(MOOSE_DIR)/modules/modules.mk
