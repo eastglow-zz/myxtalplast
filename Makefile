@@ -42,7 +42,7 @@ POROUS_FLOW                 := no
 RAY_TRACING                 := no
 RDG                         := no
 RICHARDS                    := no
-STOCHASTIC_TOOLS            := yes
+STOCHASTIC_TOOLS            := no
 TENSOR_MECHANICS            := yes
 XFEM                        := no
 

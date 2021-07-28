@@ -5,6 +5,12 @@
 [Mesh]
   type = GeneratedMesh
   dim = 3
+  nx = 1
+  ny = 1
+  nz = 2
+  xmax = 1
+  ymax = 1
+  zmax = 2
   elem_type = HEX8
 []
 
@@ -127,26 +133,32 @@
   [./stress_zz]
     type = ElementAverageValue
     variable = stress_zz
+    outputs = csv
   [../]
   [./pk2]
    type = ElementAverageValue
    variable = pk2
+   outputs = csv
   [../]
   [./fp_zz]
     type = ElementAverageValue
     variable = fp_zz
+    outputs = csv
   [../]
   [./e_zz]
     type = ElementAverageValue
     variable = e_zz
+    outputs = csv
   [../]
   [./gss]
     type = ElementAverageValue
     variable = gss
+    outputs = csv
   [../]
   [./slip_increment]
    type = ElementAverageValue
    variable = slip_increment
+   outputs = csv
   [../]
 []
 
@@ -170,9 +182,10 @@
   dt = 0.05
   dtmin = 0.01
   dtmax = 10.0
-  num_steps = 10
+  num_steps = 20
 []
 
 [Outputs]
   exodus = true
+  csv = true
 []
