@@ -115,10 +115,11 @@
   [./elasticity_tensor]
     type = ComputeElasticityTensorConstantRotationCP
     C_ijkl = '1.684e5 1.214e5 1.214e5 1.684e5 1.214e5 1.684e5 0.754e5 0.754e5 0.754e5'
+    # C_ijkl = '1.200e5 0.400e5 0.400e5 1.200e5 0.400e5 1.200e5 0.400e5 0.400e5 0.400e5'
     fill_method = symmetric9
-    euler_angle_1 = 0
-    euler_angle_2 = 45
-    euler_angle_3 = 0
+    euler_angle_1 = 45
+    euler_angle_2 = 54.7356
+    euler_angle_3 = 45
   [../]
   [./stress]
     type = ComputeMultipleCrystalPlasticityStress
@@ -191,5 +192,5 @@
 [Outputs]
   exodus = true
   csv = true
-  file_base = 'eul0_45_0_out'
+  file_base = 'eul_111nd_out'
 []
