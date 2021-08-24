@@ -206,6 +206,8 @@
   #   C_ijkl = '1.684e5 1.214e5 1.214e5 1.684e5 1.214e5 1.684e5 0.754e5 0.754e5 0.754e5'
   #   fill_method = symmetric9
   # [../]
+
+  [../]
   [./stress]
     type = ComputeMultipleCrystalPlasticityStress
     crystal_plasticity_models = 'trial_xtalpl1 trial_xtalpl2'
